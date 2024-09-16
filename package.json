@@ -1,0 +1,29 @@
+{
+  "name": "uploader",
+  "version": "1.0.0",
+  "description": "Uploader for mythrium.xyz",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wartuu/uploader.git"
+  },
+  "keywords": [
+    "uploader",
+    "mythrium"
+  ],
+  "author": "Wartuu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wartuu/uploader/issues"
+  },
+  "homepage": "https://github.com/Wartuu/uploader#readme",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "eslint": "^9.10.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  background-color: #404040;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+input,
+label {
+  margin: 25px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #303030;
+  color: snow;
+
+  box-shadow: 10px 10px 10px #6a5acd;
+  border-radius: 15px;
+
+  width: 300px;
+  height: 300px;
+}
+
+input {
+  width: 80px;
+  height: 25px;
+
+  background-color: #404040;
+
+  border: 1px solid #6a5acd;
+  color: snow;
+
+  text-align: center;
+  vertical-align: 50px;
+}
+#filebtn {
+  width: 75px;
+  height: 25px;
+
+  background-color: #404040;
+
+  border: 1px solid #6a5acd;
+  color: snow;
+
+  text-align: center;
+  vertical-align: 50px;
+}

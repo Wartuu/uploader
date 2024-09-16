@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>File Upload</title>
+  </head>
+  <body>
+    <div id="app">
+      <form action="/api/v1/upload" method="POST" enctype="multipart/form-data">
+        <label for="file" id="filebtn">FILE</label>
+        <span id="filename">No file chosen.</span>
+        <input type="file" id="file" name="file" required hidden />
+        <br /><br />
+        <input type="submit" value="Upload File" />
+      </form>
+    </div>
+
+    <script>
+      const actualBtn = document.getElementById('file');
+
+      const fileChosen = document.getElementById('filename');
+
+      actualBtn.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metoda animate</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #202020;
+        }
+
+        #b1{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="button">Start</button>
+    <div id="b1"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function(){
+            let b1 = $("#b1");
+
+            //metoda animate
+            $(button).click(function(){
+                b1.hide(1000);
+                b1.show(2000);
+
+                b1.animate({
+                    left: "1000px",//tu odzielamy przecinkiem
+                    width: '250px',
+                    height: '250px',
+                    borderRadius: '100%'
+                }, 2000);//koniec animacji 1
+
+                b1.animate({
+                    top: '500px',
+                    width: '-=100',
+                    height: '-=100',
+                    opacity: '0.2'
+                }, 500);//koniec animacji 2
+
+                b1.animate({
+                    left: '50px',
+                    borderRadius: '0',
+                    opacity: '1'
+                }, 2000);//koniec 3 animacji
+                b1.animate({
+                    top: '100px',
+                    width: '200px',
+                    height: '200px',
+                },3000);//koniec 4 animacji
+            }); //koniec click
+        });//koniec funkcji głównej
+    </script>
+    
+</body>
+</html>
